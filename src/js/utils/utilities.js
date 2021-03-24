@@ -1,4 +1,4 @@
-
+// get and set local variables for theme toggling
 const getLocalTheme = themeId =>{
     return window.localStorage.getItem(themeId);
 };
