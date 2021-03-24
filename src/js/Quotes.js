@@ -141,7 +141,7 @@ class Quotes extends Component{
                   </div>
 
                   <div className='share'>
-                    <a href='https://twitter.com/content/tweet' id='tweet-quote' target='_blank' className='lighter-font' data-testid='tweet' rel="noreferrer">tweet</a>
+                    <a href={encodeURI(`https://twitter.com/intent/tweet?text=` + text + `&hashtags=DIQs,` + tags[0] + `&url=http://bit.ly/amazing-quotes`)} id='tweet-quote' target='_blank' className='lighter-font' data-testid='tweet' rel="noreferrer">tweet</a>
                   </div>
                 </div>
               </>
