@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import Quotes from '../js/Quotes';
+import Quotes from '../js/Quotes1';
 
 // unit test of elements in the quotes component
 
@@ -59,10 +59,10 @@ test('Ensure theme toggle element is in the DOM', ()=>{
 
   expect(theme).toBeInTheDocument();
 
-  userEvent.change(theme); // click the theme change element
+  userEvent.click(theme); // click the theme change element
   expect(wrapper).toHaveClass('light-theme'); // theme originally in dark mode,change to light
 
-  userEvent.change(theme);
+  userEvent.click(theme);
   expect(wrapper).toHaveClass('dark-theme'); //change theme to dark mode on second click
 
 });

@@ -233,6 +233,11 @@ span::before gets hidden
   cursor: pointer;
 }
 
+button:hover{
+  opacity: .8;
+  cursor: pointer;
+}
+
 .content{
   padding: 40px;
 }
