@@ -131,6 +131,7 @@ const Quotes = () =>{
 
             clearInterval(t);
         }
+        // eslint-disable-next-line
     }, [timer]);
 
 
